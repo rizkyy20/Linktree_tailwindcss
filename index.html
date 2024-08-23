@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              biru: "#050C9C",
+              scbiru: "#121481",
+              trbiru: "#1C1678",
+              abu: "#666",
+              back: "#FFF5E4",
+              backk: "#C1D8C3",
+              asin: "#6A9C89",
+              oren: "#CD5C08",
+            },
+            width: {
+              boxmd: "600px",
+              boxsm: "330px",
+            },
+            gap: {
+              kecil: "1px",
+            },
+            fontFamily: {
+              inter: "Inter",
+              poppins: 'Poppins'
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      img {
+        transition: .3s ease all;
+        -webkit-transition: .3s ease all;
+        -moz-transition: .3s ease all;
+        -ms-transition: .3s ease all;
+        -o-transition: .3s ease all;
+      }
+
+      img:hover {
+        scale: 120%;
+      }
+      #a {
+        transition: .3s ease all;
+        -webkit-transition: .3s ease all;
+        -moz-transition: .3s ease all;
+        -ms-transition: .3s ease all;
+        -o-transition: .3s ease all;
+      }
+      #a:hover {
+        scale: 115%;
+      }
+      
+    </style>
+    <title>my linktree</title>
+  </head>
+  <body class="bg-gradient-to-br from-back from-60% to-asin to-90%">
+    <section>
+      <div class="w-full h-screen flex justify-center items-center gap-6">
+        <div class="md:w-boxmd w-boxsm flex flex-col items-center">
+          <div class="flex justify-center">
+            <img
+              src="Assets/Images/windah-harvestmoon-284bb257-c505-43e9-b7c2-3f035fc49212.jpg"
+              alt=""
+              class="rounded-full w-32 mb-4 shadow-2xl"
+            />
+          </div>
+          <a
+          id="a"
+            href="https://instagram.com/anotherfrz" class="text-center font-semibold font-poppins italic mb-4 bg-gradient-to-br from-red-300 via-orange-400 to-amber-300 bg-clip-text text-transparent"
+          >
+            @anotherfrz
+          </a>
+          <button onclick="link()"
+            class="transition ease-in-out hover:bg-slate-900 hover:-translate-y-2 bg-oren w-full p-2 flex justify-center items-center gap-1 rounded-full mt-4 shadow-2xl"
+          >
+            <i class="fa-brands fa-linkedin text-2xl text-white"></i>
+            <a href="" class="text-xl text-white font-inter font-semibold"
+              >Linkedin</a
+            >
+          </button>
+          <button onclick="github()"
+            class="transition ease-in-out hover:-translate-y-2 hover:bg-slate-900 w-full p-2 flex justify-center items-center gap-1 bg-oren rounded-full p-2 mt-4 shadow-2xl"
+          >
+            <i class="fa-brands fa-github text-2xl text-white"></i>
+            <a href="" class="text-xl text-white font-inter font-semibold"
+              >Github</a
+            >
+          </button>
+          <button onclick="wa()"
+            class="transition ease-in-out hover:-translate-y-2 hover:bg-slate-900 w-full p-2 flex justify-center items-center gap-1 mt-4 bg-oren rounded-full shadow-2xl"
+          >
+            <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+            <a href="" class="text-xl text-white font-inter font-semibold"
+              >Whatsapp</a
+            >
+          </button>
+          <button onclick="tiktok()"
+            class="transition ease-in-out hover:-translate-y-2 hover:bg-slate-900 w-full p-2 flex justify-center items-center gap-1 mt-4 bg-oren rounded-full shadow-2xl"
+          >
+            <i class="fa-brands fa-tiktok text-2xl text-white"></i>
+            <a
+              href=""
+              class="text-xl font-inter font-bold text-white font-semibold"
+              >Tiktok</a
+            >
+          </button>
+          <button onclick="ig()"
+            class="transition ease-in-out hover:-translate-y-2 hover:bg-slate-900 w-full p-2 shadow-2xl flex justify-center items-center gap-1 mt-4 bg-oren rounded-full"
+          >
+            <i class="fa-brands fa-instagram text-2xl text-white"></i>
+            <a href="" class="text-xl text-white font-inter font-semibold"
+              >Instagram</a
+            >
+          </button>
+        </div>
+      </div>
+      <div>
+        <p class="text-center font-inter text-xs">copyright &copy; 2024</p>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
